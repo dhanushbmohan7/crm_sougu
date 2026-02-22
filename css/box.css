@@ -1,0 +1,55 @@
+#vertical-menu {
+    background: #004050;
+    width: 250px;
+   margin: 0px 1px 13px 1px;
+    color: white;
+    /*box-shadow: 
+        0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+        0 0 200px 1px rgba(255, 255, 255, 0.5);*/
+}
+/*heading styles*/
+ #vertical-menu h3 {
+    font-size: 20px;
+line-height: 38px;
+    padding: 0 10px;
+    cursor: pointer;
+    /*fallback for browsers not supporting gradients*/
+    background: #003040;
+    background: linear-gradient(#003040, #002535);
+}
+/*heading hover effect*/
+ #vertical-menu h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+ #vertical-menu h3 span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+/*list items*/
+ #vertical-menu li {
+    list-style-type: none;
+}
+/*links*/
+ #vertical-menu ul ul li p {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 35px;
+    display: block;
+    padding: 0 15px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+/*hover effect on links*/
+ #vertical-menu ul ul li p:hover {
+    background: #003545;
+    border-left: 5px solid lightgreen;
+}
+/*Lets hide the non active LIs by default*/
+ #vertical-menu ul ul {
+    display: none;
+}
+#vertical-menu li.active ul {
+    display: block;
+}

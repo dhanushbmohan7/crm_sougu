@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.image{
+width:600px;	
+}
+
+body {
+	background: #eaeaea;
+	font-family: arial;
+	font-size: 12px;
+	color: #333333;
+}
+
+
+.upload_btn {
+	background: #4581e5;
+	color: #FFF;
+	border: 1px solid #21437c;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	cursor: pointer;
+}
+#photo_container {
+	padding: 50px 0 0 0;
+	margin-bottom:100px;
+}
+.done_btn
+{
+	margin-left: 30%;
+	float: left;
+	background: red;
+	width: 100px;
+	height: 30px;
+}
+.upload_btn:hover {
+	background: #21437c;
+}
+/* footer --------------------------*/
+.footer {
+	padding: 10px;
+	text-align: right;
+}
+.footer a {
+	color: #999999;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+/* popup --------------------------*/
+#popup_upload,
+#popup_crop {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0 ,0, 0.7);
+	z-index: 99;
+	text-align: center;
+	display: none;
+	overflow: auto;
+}
+.form_upload {
+	width: 300px;
+	height: 320px !important;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	background: #ffffff;
+	color: #666666;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px;
+	text-align: left;
+	position: relative;
+}
+.form_upload h2 {
+	border-bottom: 1px solid #999999;
+	padding: 0 0 5px 0;
+	margin: 0 0 20px 0;
+}
+.upload_frame {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+
+.file_input {
+	width: 97%;
+	background: #eaeaea;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	color: #333333;
+	padding: 1%;
+	margin: 0 0 10px 0;
+	
+}
+
+
+#upload_btn {
+	background: #cccccc;
+	color: #333333;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	float: right;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial;
+	display: block;
+	padding: 5px;
+	cursor: pointer;
+}
+#upload_btn:hover {
+	background: #eaeaea;
+}
+.close {
+    position: absolute;
+    display: block;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #F0F0F0;
+    text-align: center;
+    font-weight: bold;
+}
+.close:hover {
+    background: #cccccc;
+}
+#loading_progress {
+    float: left;
+    line-height: 18px;
+    padding: 8px 0 0 0;
+}
+#loading_progress img {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 16px !important;
+}
+.form_crop {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	background: #ffffff;
+	color: #666666;
+	margin: auto;
+	margin-top: 60px;
+	padding: 5px;
+	text-align: left;
+	position: relative;
+}
+.form_crop h2 {
+	border-bottom: 1px solid #999999;
+	padding: 0 0 5px 0;
+	margin: 0 0 20px 0;
+}
+#target {
+	background-color: #ccc;
+	width: 500px;
+	height: 330px;
+	font-size: 24px;
+	display: block;
+}
+#crop_btn {
+	background: #cccccc;
+	color: #333333;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	float: right;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial;
+	display: block;
+	padding: 5px;
+	margin: 10px 0 0 0;
+	cursor: pointer;
+}
+#crop_btn:hover {
+	background: #eaeaea;
+}
+
+.uploaded_img{
+	
+background-color:#CCC; width:130px !important; margin-right:20px; float:left; border-radius:5px; box-shadow: 4px 4px 2px #888888; padding:10px;	position:relative;
+}
+
+.delete_upload_photo{
+color:#F00; right:-15px; top:-15px; cursor:pointer;  position: absolute;
+	
+}
+
+.view_uploaded_photo{
+color:#FFF; left:0; bottom:-15px; cursor:pointer;  position: absolute;
+height:20px;	width:101%; background:#666; text-align:center;
+}
+
+
+.photo_form_save_button
+{
+position: absolute; 
+              font-size:24px;
+                bottom: 0; 
+                width: 200px; 
+                height: 50px; 
+                border: 1px solid red;
+                margin-bottom:50px;
+                background-color: red;
+                color:#FFF;
+                padding:5px 0px 0px 20px;
+                border-radius:5px;
+                cursor:pointer;	
+	
+}
+
+.photo_form_save_button:active
+{
+	 box-shadow: 5px 5px 2px #888888;
+}
+
+
+.ajax_uploaded_img{
+ background-color:#CCC; margin-right:20px; float:left; border-radius:5px; box-shadow: 4px 4px 2px #888888; padding:10px;	
+position: relative;	margin-bottom: 10px;
+}
+
+.sales_photo_upload_btn{
+	
+	background-color:#CCC;  border-radius:5px; box-shadow: 4px 4px 2px #888888; padding:25px;  float:left !important; cursor:pointer; margin-right:10px;
+	
+}
+
+.uploaded_img2{
+	
+background-color:#CCC; width:100px !important; width:80px !important; margin-right:10px; float:left; border-radius:5px; box-shadow: 2px 2px 1px #888888; padding:2px;	position:relative;
+}
+
+
