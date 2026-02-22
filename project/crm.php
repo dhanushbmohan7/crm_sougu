@@ -303,12 +303,23 @@ body { background: #f5f6fa; }
             
             echo "</div>";
 
+            $order_by = "l.sort_order ASC";
+
+$order_by = "l.sort_order ASC";
+
+if (stripos($status['status_name'], 'new') !== false) {
+    $order_by = "l.created_at DESC";
+}
+
             $leads = $obj->generalquery("
                 SELECT l.*, u.NAME AS assigned_staff_name
                 FROM leads l
                 LEFT JOIN edu_users u ON u.USERS_ID = l.assigned_to
                 WHERE $leads_where
-                ORDER BY l.sort_order ASC
+                ORDER BY $order_by
+
+
+
             ");
 
             $empty_class = empty($leads) ? 'empty' : '';
